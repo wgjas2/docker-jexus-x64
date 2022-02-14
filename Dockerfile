@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-LABEL MAINTAINER="beginor <beginor@qq.com>"
+LABEL MAINTAINER="NolyOh <wgjas2@qq.com>"
 
 COPY src/bootstrap.sh /usr/bin/
 

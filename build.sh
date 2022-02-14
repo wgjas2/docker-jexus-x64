@@ -1,2 +1,10 @@
 #!/bin/bash -e
-docker build --rm --no-cache -t beginor/jexus-x64:6.3.2021.0512 .
+
+vtime=$(date "+%Y.%m.%d")
+
+docker build --rm --no-cache -t wgjas2/jexus-x64:7.0 .
+docker tag wgjas2/jexus-x64:7.0 wgjas2/jexus-x64:latest
+docker tag wgjas2/jexus-x64:7.0 wgjas2/jexus-x64:7.0-${vtime}
+docker push wgjas2/jexus-x64:7.0
+docker push wgjas2/jexus-x64:latest
+docker push wgjas2/jexus-x64:7.0-${vtime}
