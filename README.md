@@ -2,7 +2,7 @@
 
 ## Version Info:
 
-- Jexus x64 Pro (Standalone) 7.0.x
+- Jexus x64 Pro (Standalone) 6.4.x
 - debian:buster-slim
 
 ## Usage:
@@ -12,10 +12,10 @@
 ```sh
 # latest version
 docker pull wgjas2/jexus-x64:latest
-# 7.0.x latest version
-docker pull wgjas2/jexus-x64:7.0
-# 7.0.x build day version
-docker pull wgjas2/jexus-x64:7.0-2022.02.14
+# 6.4.x latest version
+docker pull wgjas2/jexus-x64:6.4
+# 6.4.x build day version
+docker pull wgjas2/jexus-x64:6.4-2022.02.14
 ```
 
 2. Prepare the directors for volumes:

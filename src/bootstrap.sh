@@ -9,10 +9,11 @@ function stop_jws {
 }
 
 function wait_for_exit {
-  while pgrep -f "/usr/jexus" > /dev/null; do
-    /bin/sleep 1
-  done
-  echo "All jexus process have stopped."
+  pgrep -f "/usr/jexus"
+  # while pgrep -f "/usr/jexus" > /dev/null; do
+  #   /bin/sleep 1
+  # done
+  # echo "All jexus process have stopped."
 }
 
 function signal_trap {
